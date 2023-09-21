@@ -1,7 +1,7 @@
 import scratchattach as scratch3
 import requests
 import datetime
-session = scratch3.login("username", "password") 
+session = scratch3.login("username", "password") # Put your actual user and Pass
 user = session.get_linked_user()
 
 def format_time(raw_time):

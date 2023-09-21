@@ -2,7 +2,7 @@ import scratchattach as scratch3
 import requests
 import datetime
 session = scratch3.login("username", "password") 
-user = session.connect_user("username ") # Yes, you have to put your username in twice. Case Senstive
+user = session.get_linked_user()
 
 def format_time(raw_time):
     datetime_obj = datetime.datetime.fromisoformat(raw_time)

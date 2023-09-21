@@ -3,4 +3,9 @@
 
 Inspried by <a herf="https://scratch.mit.edu/users/codeGIO/">codeGIO</a> profile
 
-Sorry, I'm too tired to write the rest of readme right now, give me a hour and I will write it.
+Configure line 4 and 21 (if you run this on the cloud, look at http://worldtimeapi.org/api/timezone)
+
+```python
+session = scratch3.login("username", "password") # Put your actual user and Pass
+url = "http://worldtimeapi.org/api/ip"
+```

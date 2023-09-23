@@ -7,5 +7,6 @@ Configure line 4 and 21 (if you run this on the cloud, look at http://worldtimea
 
 ```python
 session = scratch3.login("username", "password") # Put your actual user and Pass
-url = "http://worldtimeapi.org/api/ip" # If you are running this on a cloud program use this url http://worldtimeapi.org/api/timezone/(COUNTRY FROM http://worldtimeapi.org/api/timezone)/(CITY FROM http://worldtimeapi.org/api/timezone)
+url = "http://worldtimeapi.org/api/ip" # If you are running this on a cloud program use this url
+http://worldtimeapi.org/api/timezone/(COUNTRY FROM http://worldtimeapi.org/api/timezone)/(CITY FROM http://worldtimeapi.org/api/timezone)
 ```

@@ -1,6 +1,8 @@
 import scratchattach as scratch3
 import requests
 import datetime
+import random
+
 session = scratch3.login("username", "password") # Put your actual user and Pass
 user = session.get_linked_user()
 
@@ -18,7 +20,7 @@ def othersleep(seconds): # time.sleep() was broken when I ran it so this it what
         pass
 
 def get_current_time():
-    url = "http://worldtimeapi.org/api/ip"
+    url = "http://worldtimeapi.org/api/Australia/Sydney"
     response = requests.get(url)
     
     if response.status_code == 200:
@@ -26,10 +28,10 @@ def get_current_time():
         current_time = data['datetime']
         return current_time
     else:
-        return "Failed to retrieve time"
+        print("Failed to retrieve time")
+        exit()
 
-
-while 1==1:
+while True:
     time = get_current_time()
     current_time = get_current_time()
     formatted_time = format_time(current_time)
@@ -44,4 +46,4 @@ while 1==1:
     user.set_wiwo(wiwo_text)
     # Swap set_wiwo for set_bio to make it come on your About me
     print('Done')
-    othersleep(30)
+    random.randint(5, 30)
